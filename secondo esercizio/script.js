@@ -17,7 +17,17 @@ const mucca = {
     zampe: 4
 };
 
-// Scrittura dei dati negli elementi HTML corrispondenti
-document.getElementById("c").innerHTML = `specie: ${gallina.specie}, razza: ${gallina.razza}, zampe: ${gallina.zampe}`;
-document.getElementById("b").innerHTML = `specie: ${maiale.specie}, razza: ${maiale.razza}, zampe: ${maiale.zampe}`;
-document.getElementById("a").innerHTML = `specie: ${gallina.specie}, razza: ${gallina.razza}, zampe: ${gallina.zampe}`;
+if (document.getElementById("gallina")) {
+    document.getElementById("gallina").innerHTML = 
+        `Specie: ${gallina.specie}, Razza: ${gallina.razza}, Zampe: ${gallina.zampe}`;
+}
+
+if (document.getElementById("maiale")) {
+    document.getElementById("maiale").innerHTML = 
+        `Specie: ${maiale.specie}, Razza: ${maiale.razza}, Zampe: ${maiale.zampe}`;
+}
+
+if (document.getElementById("mucca")) {
+    document.getElementById("mucca").innerHTML = 
+        `Specie: ${mucca.specie}, Razza: ${mucca.razza}, Zampe: ${mucca.zampe}`;
+}
